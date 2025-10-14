@@ -1,0 +1,10 @@
+Package: accumulator
+Type: Package
+Title: Sums numbers
+Version: 1.0
+Date: 2025-10-14
+Author: Mark Piper
+Maintainer: Mark Piper <mark.piper@colorado.edu>
+Description: Add values to a running total.
+Depends: R (>= 3.5.0), R6
+License: MIT + file LICENSE
