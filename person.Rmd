@@ -1,0 +1,38 @@
+---
+title: "Examples of the Person R6 Class"
+author: "Mark Piper"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+<!--
+To render this file, run (from the command line):
+
+    Rscript -e "rmarkdown::render('person.Rmd')"
+
+Output is written to `person.html`.
+-->
+
+This document provides examples of how to use the `Person` R6 class defined in `person.R`.
+
+Load the `person.R` script to access the `Person` class.
+```{r setup, include=TRUE}
+source('person.R')
+```
+
+Create a new `Person` object and display its details using an implied call to the `$print` method.
+```{r example-usage}
+john <- Person$new("John Doe", age=30)
+john
+```
+
+Note that the type of the `age` parameter is protected.
+```{r example-type-protection, error=TRUE}
+jane <- Person$new("Jane Doe", age="thirty")
+```
+
+Perform introspection on the `Person` instance to see its methods and fields.
+```{r example-introspection}
+class(john)
+names(john)
+```
