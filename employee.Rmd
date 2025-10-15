@@ -1,0 +1,28 @@
+---
+title: "Examples of the Employee R6 Class"
+author: "Mark Piper"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+<!--
+To render this file, run (from the command line):
+
+    Rscript -e "rmarkdown::render('employee.Rmd')"
+
+Output is written to `employee.html`.
+-->
+
+This document provides examples of how to use the `Employee` R6 class defined in `employee.R`.
+
+Load the `employee.R` script to access the `Employee` class.
+```{r setup, include=TRUE}
+source('person.R')
+source('employee.R')
+```
+
+Create a new `Employee` object and display its details using an implied call to the `$print` method.
+```{r example-usage}
+alice <- Employee$new("Alice", age=28, position="Data Scientist", salary=90000)
+alice
+```
