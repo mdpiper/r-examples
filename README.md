@@ -8,3 +8,4 @@ Also:
 * I learned much from the [Advanced R](https://adv-r.hadley.nz/r6.html) book
 * I also learned from the Earth Data Analytics [online course](https://earthdatascience.org/courses/earth-analytics/document-your-science/)
 * The [eWaterCycle/bmi-r](https://github.com/eWaterCycle/bmi-r) and [eWaterCycle/bmi-example-r](https://github.com/eWaterCycle/bmi-example-r) repositories
+* The [csdms/bmi-r](https://github.com/csdms/bmi-r) and [csdms/bmi-example-r](https://github.com/csdms/bmi-example-r) repositories
